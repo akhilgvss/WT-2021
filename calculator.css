@@ -1,0 +1,67 @@
+body {
+    background-image:linear-gradient(to right ,rgba(172, 0, 0, 255), rgba(43, 43, 43, 255));
+  }
+  
+  form {
+    margin: auto;
+    background-color: #222;
+    width: 310px;
+    max-width: 310px;
+    height: 450px;
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 10px;
+  }
+  
+  input {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  
+  #display {
+    width: 265px;
+    max-width: 270px;
+    font-size: 26px;
+    text-align: right;
+    background-color:whitesmoke;
+  }
+  
+ 
+  
+ 
+  
+  .operator {
+    background-color: #cee9ea;
+    position: relative;
+  }
+ 
+  
+ 
+  
+  #clear {
+      float: left;
+    position: relative;
+    display: block;
+    background-color: #ff9fa8;
+    width: 90%;
+  }
+
+ 
+  
+
+  

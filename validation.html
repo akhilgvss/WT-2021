@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function submit() {
+            var result;
+            var str = document.getElementById("pass").value;
+            var phone = document.getElementById("num").value;
+            var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
+            if (/[a-z]/g.test(str) && /[A-Z]/g.test(str) && /[0-9]/g.test(str) && /[^a-zA-Z\d]/g.test(str) && str.length>=8 && phoneNum.test(phone))
+                result="VALID";
+            else {
+                result="INVALID";
+            }
+            document.getElementById("output").value = result;
+        }
+    </script>
+</head>
+<body>
+    <label for="username">Enter Username</label>
+    <input type="text" required="required">
+    <br>
+    <label for="pass">Enter Password</label>
+    <input type="password" name="" id="pass" minlength="8" required="required" >
+    <br>
+    <label for="num">Enter Phone no.</label>
+    <input type="tel" name="num" id="num" required="required" />
+    <br>
+    <input type="submit" value="SUBMIT" onclick="submit()">
+    <br>
+    <input type="text" id="output" readonly/>
+</body>
+</html>
